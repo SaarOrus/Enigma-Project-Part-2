@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="204.0" prefWidth="1113.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.enigmaApp.bruteForceApp.dm.DmOperationalController">
+   <children>
+      <Label layoutX="16.0" layoutY="19.0" prefHeight="21.0" prefWidth="134.0" text="Amount of agent : " />
+      <Label layoutX="18.0" layoutY="57.0" prefHeight="31.0" prefWidth="126.0" text="Level :" />
+      <ComboBox fx:id="levelComboBox" layoutX="180.0" layoutY="60.0" prefHeight="31.0" prefWidth="416.0" />
+      <Label layoutX="17.0" layoutY="105.0" prefHeight="21.0" prefWidth="119.0" text="Size of mission :" />
+      <ComboBox fx:id="amountOfAgentComboBox" layoutX="181.0" layoutY="15.0" prefHeight="31.0" prefWidth="416.0" />
+      <Spinner fx:id="missionSizeSpinner" editable="true" layoutX="180.0" layoutY="102.0" prefHeight="31.0" prefWidth="416.0" />
+      <Label layoutX="16.0" layoutY="145.0" prefHeight="21.0" prefWidth="142.0" text="Number of missions :" />
+      <Label fx:id="numberOfMissionLabel" layoutX="182.0" layoutY="145.0" prefHeight="21.0" prefWidth="380.0" text="0" />
+      <ToggleButton fx:id="pauseBtn" disable="true" layoutX="718.0" layoutY="91.0" mnemonicParsing="false" onMouseClicked="#pauseProgressBtnClick" prefHeight="51.0" prefWidth="104.0" text="pause" />
+      <ToggleButton fx:id="resumeBtn" disable="true" layoutX="818.0" layoutY="91.0" mnemonicParsing="false" onMouseClicked="#resumeProgressBtnClick" prefHeight="51.0" prefWidth="104.0" text="resume" />
+      <ToggleButton fx:id="startBtn" disable="true" layoutX="718.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#startProgressBtnClick" prefHeight="51.0" prefWidth="104.0" text="start" />
+      <ToggleButton fx:id="stopBtn" disable="true" layoutX="819.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#stopProgressBtnClick" prefHeight="51.0" prefWidth="104.0" text="stop" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.enigmaApp.bruteForceApp.BruteForceAppController">
+   <bottom>
+      <fx:include fx:id="dmOutputComponent" source="dm/dmOutput.fxml" />
+   </bottom>
+   <top>
+      <GridPane prefHeight="330.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="161.0" minHeight="0.0" prefHeight="101.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="254.0" minHeight="0.0" prefHeight="243.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <fx:include fx:id="dictionaryComponent" source="dictionary/dictionary.fxml" GridPane.rowIndex="1" />
+            <fx:include fx:id="topCurrentCodeBruteForceComponent" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" source="topBruteForce/topCurrentCodeBruteForce.fxml" />
+         </children>
+      </GridPane>
+   </top>
+   <center>
+      <fx:include fx:id="dmOperationalComponent" source="dm/dmOperational.fxml" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

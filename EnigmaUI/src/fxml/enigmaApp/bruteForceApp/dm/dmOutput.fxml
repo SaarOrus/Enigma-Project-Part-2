@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="159.0" prefWidth="1110.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.enigmaApp.bruteForceApp.dm.DmOutputController">
+   <children>
+      <ProgressBar fx:id="progress" layoutX="81.0" layoutY="124.0" prefHeight="23.0" prefWidth="333.0" progress="0.0">
+         <effect>
+            <Glow />
+         </effect></ProgressBar>
+      <TextArea fx:id="decode" editable="false" layoutX="172.0" layoutY="8.0" prefHeight="104.0" prefWidth="930.0" />
+      <Label layoutX="13.0" layoutY="122.0" prefHeight="21.0" prefWidth="69.0" text="Progress">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="425.0" layoutY="126.0" text="mission status:" />
+      <TextField fx:id="missionStatusText" editable="false" layoutX="527.0" layoutY="120.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="97.0" />
+      <Label layoutY="3.0" prefHeight="42.0" prefWidth="173.0" text="Candidates for decoding :" />
+      <Label layoutX="829.0" layoutY="122.0" prefHeight="21.0" prefWidth="153.0" text="Average time to task :" />
+      <Label layoutX="631.0" layoutY="124.0" prefHeight="21.0" prefWidth="75.0" text="total time:" />
+      <TextField fx:id="totalTimeForTask" editable="false" layoutX="703.0" layoutY="119.0" prefHeight="31.0" prefWidth="120.0" />
+      <TextField fx:id="averageTimeForTask" editable="false" layoutX="982.0" layoutY="120.0" prefHeight="31.0" prefWidth="120.0" />
+      
+   </children>
+</AnchorPane>

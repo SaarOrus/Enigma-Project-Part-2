@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.enigmaApp.encryptApp.EncryptAppController">
+   <top>
+      <fx:include fx:id="topCurrentCodeComponent" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" source="topCurrentCode/topCurrentCode.fxml" />
+   </top>
+   <left>
+      <fx:include fx:id="leftEncryptComponent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" source="leftEncrypt/leftEncrypt.fxml" />
+   </left>
+   <right>
+      <fx:include fx:id="rightStatisticsComponent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" source="rightStatistics/rightStatisticsEncrypt.fxml" />
+   </right>
+   <bottom>
+      <fx:include fx:id="mainKeyboardComponent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="1200.0" source="keyboard/mainKeyboard.fxml" BorderPane.alignment="CENTER_LEFT" />
+   </bottom>
+</BorderPane>
